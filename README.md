@@ -2,7 +2,7 @@
 
 [**Reddit Post**](https://www.reddit.com/r/Minecraft/comments/1nxagcd/fix_the_authentication_servers_are_currently_down/)
 
-At 3 October 2025, 14:00 the TLS certificate for `sessionserver.mojang.com` has been changed, causing the **“The authentication servers are currently down for maintenance”** error on all Minecraft versions up to **1.16.5** (Java 8).
+At 3 October 2025, 14:00 UTC the TLS certificate for `sessionserver.mojang.com` has been changed, causing the **“The authentication servers are currently down for maintenance”** error on all Minecraft versions up to **1.16.5** (Java 8).
 
 The root cause is that the default **Java 8** truststore doesn’t include the Microsoft **Azure RSA TLS Issuing CA 04** chain now used by `*.mojang.com`.
 
