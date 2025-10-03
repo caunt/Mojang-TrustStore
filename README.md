@@ -4,7 +4,7 @@
 
 At 3 October 2025, 14:00 UTC the TLS certificate for `sessionserver.mojang.com` has been changed, causing the **“The authentication servers are currently down for maintenance”** error on all Minecraft versions up to **1.16.5** (Java 8).
 
-The root cause is that default Java 8 (before 8u91) default truststore lacks the DigiCert Global Root G2 that now anchors *.mojang.com (issued by Microsoft Azure RSA TLS Issuing CA 04).
+The root cause is that Java 8 (before 8u91) default truststore lacks the DigiCert Global Root G2 that now anchors *.mojang.com (issued by Microsoft Azure RSA TLS Issuing CA 04).
 
 _Mojangs may fix this by switching back to a CA bundled with Java 8._
 
