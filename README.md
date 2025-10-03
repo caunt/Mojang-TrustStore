@@ -6,7 +6,9 @@ At 3 October 2025, 14:00 UTC the TLS certificate for `sessionserver.mojang.com` 
 
 The root cause is that default Java 8 (before 8u91) default truststore lacks the DigiCert Global Root G2 that now anchors *.mojang.com (issued by Microsoft Azure RSA TLS Issuing CA 04).
 
-Mojangs may fix this by switching back to a CA bundled with Java 8.
+_Mojangs may fix this by switching back to a CA bundled with Java 8._
+
+As a temporary fix - users can tell the JVM to use truststore that includes DigiCert Global Root G2.
 
 # ✅ FIX
 
