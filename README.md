@@ -8,7 +8,7 @@ The root cause is that the default **Java 8** truststore doesn’t include the M
 
 Mojangs may fix this by switching back to a CA bundled with Java 8.
 
-## FIX
+# ✅ FIX
 
 [**Download**](https://github.com/caunt/Mojang-TrustStore/raw/refs/heads/main/mojang-trust.jks) this truststore that includes the issuer certificates (Microsoft intermediate + DigiCert root) and pass these JVM arguments in your launcher:
 
