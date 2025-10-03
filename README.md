@@ -10,7 +10,9 @@ Mojangs may fix this by switching back to a CA bundled with Java 8.
 
 # ✅ FIX
 
-[**Download**](https://github.com/caunt/Mojang-TrustStore/raw/refs/heads/main/mojang-trust.jks) this trust store that includes DigiCert Global Root G2 and add the following JVM arguments in whatever launcher you use:
+1) [**Download**](https://github.com/caunt/Mojang-TrustStore/raw/refs/heads/main/mojang-trust.jks) this trust store that includes DigiCert Global Root G2
+
+2) Add the following JVM arguments in whatever launcher you use:
 
 ```bash
 -Djavax.net.ssl.trustStore="C:\mojang-trust.jks" -Djavax.net.ssl.trustStorePassword=changeit -Djdk.tls.client.protocols=TLSv1.2
