@@ -18,4 +18,4 @@ Mojangs may fix this by switching back to a CA bundled with Java 8.
 -Djavax.net.ssl.trustStore="C:\mojang-trust.jks" -Djavax.net.ssl.trustStorePassword=changeit -Djdk.tls.client.protocols=TLSv1.2
 ```
 
-Replace `C:\mojang-trust.jks` with the path where you saved the truststore.
+Simply save the file above on disk C:\ as I did and use exactly same JVM arguments or update the file path to where you saved it.
